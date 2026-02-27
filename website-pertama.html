@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noval Rasyah Kurnia Putra | Portfolio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Logo -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #ffffff;
+        color: #333;
+      }
+
+      /* NAVBAR */
+      nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: #5e17eb;
+        padding: 15px 0;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 500;
+      }
+
+      /* HERO */
+      header {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 10% 60px 10%;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(255, 255, 255, 0.2),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(255, 255, 255, 0.15),
+            transparent 40%
+          ),
+          linear-gradient(135deg, #5e17eb, #7c3aed);
+        color: white;
+      }
+
+      .hero-container {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        flex-wrap: wrap;
+      }
+
+      /* FOTO */
+      .profile-img {
+        width: 270px;
+        height: 270px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+      }
+
+      /* TEXT */
+      .hero-text h1 {
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+        max-width: 600px;
+      }
+
+      /* SECTION */
+      section {
+        padding: 90px 10%;
+      }
+
+      section h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+        color: #5e17eb;
+        text-align: center;
+      }
+
+      /* CARD */
+      .card {
+        background: white;
+        padding: 30px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      /* SKILLS */
+      .skills {
+        text-align: center;
+      }
+
+      .skills span {
+        display: inline-block;
+        background: #5e17eb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        margin: 8px;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+
+      .skills span:hover {
+        background: #7c3aed;
+      }
+
+      /* EXPERIENCE */
+      .experience-wrapper {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .experience-item {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 60px;
+        align-items: flex-start;
+      }
+
+      .experience-item img {
+        width: 320px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .experience-content {
+        flex: 1;
+      }
+
+      .experience-content h3 {
+        color: #5e17eb;
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      .experience-content p {
+        line-height: 1.7;
+        text-align: justify;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #5e17eb;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 900px) {
+        .hero-container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .profile-img {
+          width: 200px;
+          height: 200px;
+        }
+
+        .experience-item {
+          flex-direction: column;
+        }
+
+        .experience-item img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      /* CONTACT */
+      .contact-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        background: white;
+        padding: 25px 35px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        color: #5e17eb;
+        font-weight: 500;
+      }
+
+      .contact-item i {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .contact-item:hover {
+        transform: translateY(-8px);
+        background: #5e17eb;
+        color: white;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 900px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#projects">Projek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <header>
+      <div class="hero-container">
+        <img src="foto.jpg" alt="Noval Rasyah" class="profile-img" />
+
+        <div class="hero-text">
+          <h1>Noval Rasyah Kurnia Putra</h1>
+          <p>
+            Mahasiswa Teknik Informatika Universitas Esa Unggul yang memiliki
+            minat dalam pengembangan teknologi dan pemecahan masalah berbasis
+            sistem.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <div class="card">
+        <p>
+          Saya Noval Rasyah Kurnia Putra, mahasiswa Teknik Informatika
+          Universitas Esa Unggul yang memiliki minat dalam pengembangan
+          teknologi dan pemecahan masalah berbasis sistem. Saya memiliki
+          kemampuan analitis yang baik, teliti, serta terbiasa berpikir
+          sistematis dalam menyelesaikan tugas dan tantangan. Aktif dalam
+          kegiatan organisasi, saya terbiasa bekerja sama dalam tim, beradaptasi
+          dengan lingkungan yang dinamis, serta berkontribusi secara aktif untuk
+          mencapai tujuan bersama. Saya berkomitmen untuk terus mengembangkan
+          kompetensi dan memberikan kontribusi terbaik dalam lingkungan
+          profesional.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Public Speaking</span>
+        <span>Microsoft Office</span>
+        <span>Problem Solving</span>
+        <span>Teamwork</span>
+        <span>Adaptif dalam Organisasi</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Pengalaman</h2>
+
+      <div class="experience-wrapper">
+        <div class="experience-item">
+          <img src="pengalaman1.jpg" alt="Rohani Islam" />
+          <div class="experience-content">
+            <h3>Sekretaris Rohani Islam</h3>
+            <p>
+              Sebagai Sekretaris Rohis di SMK Galajuara periode 2022–2024, saya
+              bertanggung jawab penuh atas manajemen administrasi dan pusat
+              dokumentasi organisasi selama dua tahun masa bakti. Peran utama
+              saya berfokus pada pengelolaan sistem presensi, di mana saya
+              bertugas mencatat dan mengarsipkan tingkat kehadiran seluruh
+              anggota dalam setiap agenda dakwah, mulai dari kajian rutin,
+              mentoring, hingga peringatan hari besar Islam (PHBI). Melalui
+              ketelitian dalam pendataan, saya memastikan bahwa setiap
+              partisipasi siswa terdokumentasi dengan akurat sebagai bentuk
+              transparansi dan akuntabilitas organisasi di lingkungan sekolah.
+              Lebih dari sekadar mencatat nama, peran saya di SMK Galajuara ini
+              juga mencakup pengolahan data keaktifan yang menjadi dasar
+              evaluasi bagi pengurus dalam melihat dinamika keterlibatan
+              anggota. Dengan menjaga kerapian arsip kehadiran selama periode
+              tersebut, saya membantu menciptakan sistem administrasi yang
+              teratur, sehingga roda organisasi Rohis dapat berjalan lebih
+              efektif dan setiap perkembangan kader dapat terpantau dengan jelas
+              demi keberlangsungan dakwah di sekolah.
+            </p>
+            <p>
+              Saya juga melakukan pengolahan data keaktifan sebagai dasar
+              evaluasi pengurus untuk meningkatkan efektivitas organisasi dan
+              menjaga keteraturan administrasi.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <img src="pengalaman2.jpg" />
+          <div class="experience-content">
+            <h3>Juru Adat Ambalan Paradisa</h3>
+            <p>
+              Selaku Juru Adat Pramuka periode 2023–2024, saya mengemban amanah
+              sebagai penjaga kode etik, tradisi, dan kedisiplinan dalam
+              ambalan. Peran strategis saya berfokus pada pengawasan
+              implementasi Tri Satya dan Dasa Darma dalam setiap aktivitas
+              kepramukaan, serta memastikan seluruh anggota menjalankan adat
+              istiadat organisasi dengan konsisten. Saya bertanggung jawab
+              memimpin prosesi adat, mulai dari upacara pembukaan dan penutupan
+              latihan hingga prosesi pelantikan anggota baru, guna menjaga
+              muruah dan kesakralan tradisi Pramuka di satuan saya. Selain
+              menjadi figur teladan, saya juga berperan dalam fungsi mediasi dan
+              penegakan disiplin bagi anggota yang melanggar norma adat
+              organisasi. Selama masa bakti satu tahun ini, saya berkomitmen
+              untuk membangun karakter anggota yang berintegritas melalui
+              pendekatan persuasif maupun tegas, sehingga tercipta lingkungan
+              organisasi yang harmonis dan berwibawa. Dengan menjaga nilai-nilai
+              luhur kepramukaan, saya memastikan bahwa setiap kader tidak hanya
+              unggul secara teknis kepramukaan (scout craft), tetapi juga
+              memiliki kepribadian yang luhur sesuai dengan marwah gerakan
+              Pramuka.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <img src="pengalaman3.jpg" />
+          <div class="experience-content">
+            <h3>Vidiografer Podcast Joerkast</h3>
+            <p>
+              Selaku Videografer Podcast SMK Galajuara periode 2023–2024, saya
+              bertanggung jawab penuh atas seluruh aspek visual dan teknis
+              produksi konten audio-visual sekolah. Peran utama saya mencakup
+              pengelolaan tata kamera (camera angle), pengaturan pencahayaan
+              (lighting), hingga memastikan komposisi gambar yang estetik dan
+              dinamis selama proses syuting berlangsung. Saya bertugas
+              menerjemahkan konsep kreatif menjadi tayangan yang menarik bagi
+              audiens, dengan fokus pada kualitas resolusi dan transisi visual
+              yang halus guna menciptakan pengalaman menonton yang profesional
+              dan profesional. Selain menangani operasional perangkat kamera di
+              lapangan, saya juga berkolaborasi erat dengan tim kreatif dan
+              editor untuk memastikan setiap episode podcast memiliki alur
+              visual yang konsisten dengan identitas sekolah. Selama masa bakti
+              ini, saya berhasil mengelola alur kerja produksi video dari tahap
+              pra-produksi hingga pasca-produksi, memastikan setiap konten yang
+              dihasilkan tidak hanya informatif tetapi juga memiliki nilai
+              produksi yang tinggi. Pengalaman ini mengasah kemampuan teknis
+              saya dalam sinematografi serta ketajaman insting dalam menangkap
+              momen-momen penting di balik layar.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <img src="pengalaman4.jpg" />
+          <div class="experience-content">
+            <h3>Praktik Kerja Lapangan</h3>
+            <p>
+              Selama masa Praktik Kerja Lapangan (PKL) di PT. PLN Nusantara
+              Power UP Muara Tawar pada tahun 2024, saya bertanggung jawab dalam
+              memberikan dukungan teknis operasional untuk memastikan stabilitas
+              infrastruktur teknologi informasi di lingkungan perusahaan. Peran
+              utama saya mencakup troubleshooting perangkat keras dan lunak,
+              pemeliharaan jaringan lokal (LAN/WLAN), serta memastikan seluruh
+              perangkat kerja karyawan berfungsi optimal guna mendukung
+              kelancaran operasional pembangkitan listrik. Saya bertugas
+              menangani berbagai kendala teknis harian, mulai dari instalasi
+              sistem operasi, konfigurasi perangkat jaringan, hingga
+              pemeliharaan rutin pada unit komputer dan server. Selain aspek
+              teknis, pengalaman ini melatih kemampuan saya dalam manajemen
+              layanan pengguna (user support) dengan memberikan solusi yang
+              cepat dan efektif terhadap keluhan teknologi yang muncul. Bekerja
+              di lingkungan industri strategis seperti PLN Nusantara Power
+              menuntut saya untuk memiliki kedisiplinan tinggi, ketelitian dalam
+              bekerja, serta pemahaman mendalam mengenai standar keamanan data
+              dan keselamatan kerja (K3). Pengalaman ini berhasil mengasah
+              kompetensi teknis saya dalam dunia IT riil sekaligus memperkuat
+              kemampuan komunikasi profesional dalam lingkungan korporat yang
+              dinamis.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <img src="pengalaman5.jpg" />
+          <div class="experience-content">
+            <h3>Penyiar Spin The Radio FM (Radio Kampus)</h3>
+            <p>
+              Sebagai Penyiar di Spin The Radio FM (Radio Kampus Universitas Esa
+              Unggul Kota Bekasi), saya bertanggung jawab dalam mengelola
+              program siaran yang edukatif, informatif, dan menghibur bagi
+              audiens kampus. Peran utama saya mencakup penyusunan naskah siaran
+              (script writing), pemilihan daftar putar lagu yang sesuai dengan
+              segmentasi pendengar, serta memandu acara secara live dengan
+              teknik komunikasi yang dinamis dan interaktif. Saya bertugas
+              membangun koneksi dengan pendengar melalui penyampaian konten yang
+              relevan, mulai dari berita terkini di lingkungan kampus hingga
+              topik tren anak muda, guna meningkatkan engagement pendengar
+              radio. Selain aspek performa suara, peran ini menuntut kemampuan
+              manajemen waktu yang ketat dan koordinasi teknis di dalam studio.
+              Saya juga berperan dalam mengoperasikan perangkat siaran serta
+              berkolaborasi dengan tim kreatif untuk memastikan kelancaran alur
+              program dari awal hingga akhir siaran. Pengalaman di Spin The
+              Radio FM ini telah mengasah kemampuan public speaking, kreativitas
+              dalam improvisasi, serta kepercayaan diri saya dalam berkomunikasi
+              di depan publik, yang semuanya merupakan elemen kunci dalam
+              membangun citra positif sebuah institusi pendidikan tinggi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projek</h2>
+
+      <div class="experience-wrapper">
+        <div class="experience-item">
+          <img src="projek1.jpg" alt="Projek 1" />
+          <div class="experience-content">
+            <h3>Belum Ada Projek</h3>
+            <p>
+              Saat ini saya sedang dalam tahap pengembangan kemampuan dan
+              eksplorasi teknologi. Projek akan segera ditambahkan seiring
+              dengan perkembangan skill dan pengalaman saya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak Saya</h2>
+
+      <div class="contact-container">
+        <a
+          href="https://wa.me/6285117133101"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <a
+          href="https://instagram.com/nopall.rsyahh"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/noval-rasyah-kurnia-putra-5918a233a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="https://tiktok.com/@nopallrsyahh"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fab fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>© 2026 Noval Rasyah Kurnia Putra</footer>
+  </body>
+</html>
